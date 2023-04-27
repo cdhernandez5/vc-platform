@@ -54,7 +54,7 @@
         },
         "repoUrl": {
             "type": "string",
-            "defaultValue": "https://github.com/VirtoCommerce/vc-platform"
+            "defaultValue": "https://github.com/cdhernandez5/vc-platform"
         },
         "branch": {
             "type": "string",
