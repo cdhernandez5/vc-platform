@@ -104,9 +104,9 @@
                         "[concat('Microsoft.Sql/servers/', parameters('appServiceName'))]"
                     ],
                     "properties": {
-                        "edition": "Basic",
+                        "edition": "Standard",
                         "collation": "SQL_Latin1_General_CP1_CI_AS",
-                        "maxSizeBytes": "1073741824",
+                        "maxSizeBytes": "2147483648",
                         "requestedServiceObjectiveId": "DD6D99BB-F193-4EC1-86F2-43D3BCCBC49C"
                     },
                     "sku": {
