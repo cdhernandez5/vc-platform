@@ -96,7 +96,7 @@
             },
             "resources": [
                 {
-                    "apiVersion": "2021-05-01",
+                    "apiVersion": "2014-04-01",
                     "type": "databases",
                     "name": "[parameters('appServiceName')]",
                     "location": "[resourceGroup().location]",
@@ -106,11 +106,12 @@
                     "properties": {
                         "edition": "Basic",
                         "collation": "SQL_Latin1_General_CP1_CI_AS",
-                        "maxSizeBytes": "2147483648",
-                        "sku": {
-                            "name": "Basic",
-                            "tier": "Basic"
-                        }
+                        "maxSizeBytes": "1073741824",
+                        "requestedServiceObjectiveId": "DD6D99BB-F193-4EC1-86F2-43D3BCCBC49C"
+                    },
+                    "sku": {
+                      "name": "Standard",
+                      "tier": "Standard"
                     }
                 },
                 {
