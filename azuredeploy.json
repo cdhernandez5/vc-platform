@@ -86,18 +86,17 @@
             "kind": "StorageV2"
         },
         {
-            "apiVersion": "2014-04-01",
+            "apiVersion": "2021-05-01",
             "type": "Microsoft.Sql/servers",
             "name": "[parameters('appServiceName')]",
             "location": "[resourceGroup().location]",
             "properties": {
-                "version": "12.0",
                 "administratorLogin": "[parameters('sqlAdministratorLogin')]",
                 "administratorLoginPassword": "[parameters('sqlAdministratorPassword')]"
             },
             "resources": [
                 {
-                    "apiVersion": "2014-04-01",
+                    "apiVersion": "2021-05-01",
                     "type": "databases",
                     "name": "[parameters('appServiceName')]",
                     "location": "[resourceGroup().location]",
@@ -108,7 +107,6 @@
                         "edition": "Basic",
                         "collation": "SQL_Latin1_General_CP1_CI_AS",
                         "maxSizeBytes": "2147483648",
-                        "requestedServiceObjectiveId": "dd6d9908-38c3-4cf7-a57b-e5ac815e66f7",
                         "sku": {
                             "name": "Basic",
                             "tier": "Basic"
