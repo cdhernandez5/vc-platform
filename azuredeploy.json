@@ -108,7 +108,11 @@
                         "edition": "Basic",
                         "collation": "SQL_Latin1_General_CP1_CI_AS",
                         "maxSizeBytes": "2147483648",
-                        "requestedServiceObjectiveId": "dd6d9908-38c3-4cf7-a57b-e5ac815e66f7"
+                        "requestedServiceObjectiveId": "dd6d9908-38c3-4cf7-a57b-e5ac815e66f7",
+                        "sku": {
+                            "name": "Basic",
+                            "tier": "Basic"
+                        }
                     }
                 },
                 {
