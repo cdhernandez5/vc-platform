@@ -86,7 +86,7 @@
             "kind": "StorageV2"
         },
         {
-            "apiVersion": "2021-05-01",
+            "apiVersion": "2014-04-01",
             "type": "Microsoft.Sql/servers",
             "name": "[parameters('appServiceName')]",
             "location": "[resourceGroup().location]",
